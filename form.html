@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karbi Kurpho</title>
+</head>
+<body>
+    <center>
+<h2 style="font-weight: bold; color: green; text-shadow:1px 1px 3px rgb(82, 38, 228);">NANG NING KEDOK AKUR CHONGVAI THA</h2>
+<button onclick="myfun()" style="background-color: chartreuse; border-radius: 30px;">Click here</button>
+<p id="demo" style="font-size: large; color: blue;"></p>
+</center>
+    <script>
+        function myfun(){
+           let text;
+           let favDrink=prompt("Nang ningkedok akur kopilo alingber input box along tokra nangthan tha");
+           switch(favDrink){
+               case "Ingti":
+               text="Ingti atum ke chepindak pik";
+               break;
+               case "Teron":
+               text="Teron atum ke chepabi oh lapen chingkimesen";
+               break;
+               case "Inghi":
+               text="Inghi atum ke bang aphan pu ak ak selet le pik";
+               break;
+               case "Terang":
+               text="Terang atum ke pachorai thek pik, chongthui thek pik";
+               break;
+               case "Timung":
+               text=" Timung atum ke angthin langno pik pik";
+               break;
+               default:text="La an ke neta chini ne det lo dy........"
+           }
+           document.getElementById("demo").innerHTML=text;
+        }
+    </script>
+</body>
+</html>
